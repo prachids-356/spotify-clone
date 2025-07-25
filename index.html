@@ -2,161 +2,319 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="./assets/logo.png" >
+    <title>Prachi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style3.css">
-    <script src="script.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="main">
-        <div class="sidebar">
-            <div class="nav">
-                <div class="nav-option" style="opacity: 1;">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                    </div>
-                    <div class="library nav-option">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>Search</span>
-                    </div>
-
-                </div>
-                <div class="library nav-option">
-                    <div class="options">
-                        <div class="lib-options">
-                        <img src="./assets/library_icon.png">
-                        <a href="#" class="lib-text">Your Library</a>
-                    </div>
-                    <div class="icons">
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-
-                
-                <div class="lib-box">
-                    <div class="box">
-                        <p class="box-p1"> Create your first playlist</p>
-                        <p class="box-p2">It's easy,we'll help you</p>
-                        <button class="badge">Create playlist</button>
-                    </div>
-                    <div class="box">
-                        <p class="box-p1"> Let's find some podcast to follow</p>
-                        <p class="box-p2">We'll keep you updated on new episodes</p>
-                        <button class="badge">Browse podcasts</button>
-                    </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Prachi</h2>
             </div>
-
-        </div>
-        
-        <div class="maincontent">
-            <div class="sticky-nav">
-                <div class="nav-icons">
-                <img src="./assets/backward_icon.png">
-                <img src="./assets/forward_icon.png">
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="sticky-nav-options">
-                <button class="badge hide">Explore Premium</button>
-
-                <button class="badge nav-item dark-badge"><i class="fa-solid fa-arrow-down" style="margin-left: 0.5rem;"></i>Install app</button>
-                 <i class="fa-solid fa-user"></i>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-            <h2>Recently Played</h2>
-            <div class="card-container">
-                <div class="card">
-                <img src="./assets/card1img.jpeg" class="card-img">
-                <p class="card-title">Top 50-Global</p>
-                <p class="card-info">Your daily update of most important tracks...</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Prachi</span></h1>
+                <h2>Frontend Developer & UI/UX Enthusiast</h2>
+                <p>I create beautiful, responsive web experiences with modern technologies. Passionate about clean code and user-centered design.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-            <br>
-                <h2>Trending now near you</h2>
-            <div class="card-container">
-                <div class="card">
-                <img src="./assets/card2img.jpeg" class="card-img">
-                <p class="card-title">Mahiye Jinna Sohna</p>
-                <p class="card-info">Your daily update of most important tracks...</p>
-                
-            </div>
-            <br>
-            <div class="card-container">
-                <div class="card">
-                <img src="./assets/card3img.jpeg" class="card-img">
-                <p class="card-title">Mere Pas Tum Ho</p>
-                <p class="card-info">Your daily update of most important tracks...</p>
-                
-            </div>
-            <br>
-
-            <div class="card-container"> 
-                <div class="card">
-                <img src="./assets/card4img.jpeg" class="card-img">
-                 <p class="card-title">Naa Reddy</p>
-                <p class="card-info">Your daily update of most important tracks...</p>
-                </div>
-    <br>    </div> 
-        </div>
-    </div>
-    <br>
-    <br>
-            <div class="card-container">
-                <div class="card">
-                <img src="./assets/card5img.jpeg" class="card-img">
-                <p class="card-title">Top 50-Global</p>
-                <p class="card-info">Your daily update of most important tracks...</p>
-                
-            </div>
-
-                <div class="card-container">
-                    <div class="card">
-                    <img src="./assets/card6img.jpeg" class="card-img">
-                    <p class="card-title">Top Songs India</p>
-                    <p class="card-info">Your daily update of most important tracks...</p>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-img">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="float-element html"><i class="fab fa-html5"></i></div>
+                        <div class="float-element css"><i class="fab fa-css3-alt"></i></div>
+                        <div class="float-element js"><i class="fab fa-js-square"></i></div>
+                        <div class="float-element react"><i class="fab fa-react"></i></div>
                     </div>
                 </div>
             </div>
-                <br><br><br><br><br><br>
+        </div>
+    </section>
 
-
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
             </div>
-             <footer class="music-player">
-    <div class="player-left">
-      <img src="./assets/card2img.jpeg" alt="Album Art">
-      <div class="track-info">
-        <p class="track-name">Mahiye Jinna Sohna</p>
-        <p class="artist-name">Darshan Raval</p>
-      </div>
-      <i class="fas fa-heart"></i>
-    </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Prachi</h3>
+                    <p>I'm a passionate frontend developer with a keen eye for design and user experience. I love creating web applications that are not only functional but also visually appealing and user-friendly.</p>
+                    <p>My journey in web development started with curiosity about how websites work, and it has evolved into a passion for creating digital experiences that make a difference.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>2+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="player-center">
-      <div class="controls">
-        <i class="fas fa-random"></i>
-        <i class="fas fa-step-backward"></i>
-        <i class="fas fa-play-circle play-button"></i>
-        <i class="fas fa-step-forward"></i>
-        <i class="fas fa-redo"></i>
-      </div>
-      <div class="progress-bar">
-        <span>0:00</span>
-        <input type="range" value="0" min="0" max="100" />
-        <span>3:45</span>
-      </div>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Technologies</h2>
+                <p>Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Color Theory</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-npm"></i>
+                            <span>NPM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="player-right">
-      <i class="fas fa-volume-down"></i>
-      <input type="range" value="50" min="0" max="100" />
-      <i class="fas fa-expand"></i>
-    </div>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./screenshot.png" alt="Spotify Clone">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Spotify Clone</h3>
+                        <p>A responsive static UI clone of Spotify homepage built with HTML5 and CSS3. Features clean design and modern layout structure.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Flexbox</span>
+                            <span class="tech-tag">Grid</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing my skills and projects. Built with clean HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Landing</h3>
+                        <p>A modern e-commerce landing page with smooth animations and responsive design. Focus on user experience and conversion.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's create something amazing together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>prachi@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Your City, Country</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Prachi. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
